@@ -1,0 +1,17 @@
+/* Goulash style */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main__title {
+    text-align: center;
+}
+
+.main__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+}
