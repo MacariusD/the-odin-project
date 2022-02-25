@@ -1,0 +1,92 @@
+/*Landing-Page CSS Styles */
+/* Global Defaults Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: auto;
+    height: auto;
+}
+
+/* Variables */
+:root {
+    --dark-bg-color: #1f2937;
+    --light-bg-color: #f9faf8;
+    --secondary-bg-color: #e5e7eb;
+    --light-text-color: #f9faf8;
+    --dark-text-color: #1f2937;
+    --secondary-text-color: #e5e7eb;
+    --tertiary-color: #3882f6;
+}
+
+/* Header */
+header {
+    background-color: var(--dark-text-color);
+    padding: 10px 100px 50px;
+    color: var(--light-text-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex-direction: reverse;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: light;
+}
+
+.nav__link:link, .nav__link:visited {
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+.nav__link:hover, .nav__link:active {
+    color: var(--light-text-color);
+    text-decoration: underline;
+}
+
+/* Upper */
+.upper {
+    background-color: var(--dark-bg-color);
+    padding: 0px 100px 50px;
+    color: var(--light-text-color);
+    justify-content: space-between;
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Middle upper */
+.middle__upper {
+    background-color: var(--light-bg-color);
+    padding: 0px 100px;
+    color: var(--dark-text-color);
+    text-align: center;
+}
+
+.content {
+    display: flex;
+}
+
+
+/* Middle lower */
+.middle__lower {
+    background-color: var(--secondary-bg-color);
+    padding: 0px 100px;
+}
+
+/* Lower */
+.lower {
+    background-color: var(--light-bg-color);
+    padding: 0px 100px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg-color);
+    padding: 0px 100px;
+}
