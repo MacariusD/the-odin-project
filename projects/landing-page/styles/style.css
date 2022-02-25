@@ -29,13 +29,11 @@ header {
 
 nav {
     display: flex;
-    flex-direction: reverse;
     justify-content: flex-end;
     align-items: end;
     gap: 20px;
     font-size: 18px;
     font-weight: light;
-    padding-right: 0px;
 }
 
 .nav__link:link, .nav__link:visited {
