@@ -119,7 +119,7 @@ nav {
 /* Middle lower */
 .middle__lower {
     background-color: var(--secondary-bg-color);
-    padding: 150px 350px;
+    padding: 140px 350px;
     display: flex;
     flex-direction: column;
 }
@@ -137,7 +137,22 @@ nav {
 /* Lower */
 .lower {
     background-color: var(--light-bg-color);
+    padding: 100px 200px;
+}
+
+.inset {
+    border-radius: 8px;
+    background-color: var(--tertiary-color);
     padding: 0px 100px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inset__text {
+    flex: 1;
+    color: var(--light-text-color);
 }
 
 /* Footer */
@@ -161,4 +176,9 @@ button {
     height: 35px;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.button--call{
+    border: solid 2px white;
 }
