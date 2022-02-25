@@ -3,13 +3,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: roboto;
 }
 
 /* Variables */
 :root {
     --dark-bg-color: #1f2937;
-    --light-bg-color: #f9faf8;
+    --light-bg-color: white;
     --secondary-bg-color: #e5e7eb;
     --light-text-color: #f9faf8;
     --dark-text-color: #1f2937;
@@ -84,15 +84,38 @@ nav {
 /* Middle upper */
 .middle__upper {
     background-color: var(--light-bg-color);
-    padding: 0px 100px;
+    padding: 50px 200px 100px;
     color: var(--dark-text-color);
     text-align: center;
 }
 
-.content {
-    display: flex;
+.middle__upper h2 {
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 50px;
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.content__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__box > *{
+    width: 150px;
+}
+
+.placehold {
+    height: 150px;
+    border: solid 4px var(--tertiary-color);
+    border-radius: 15px; 
+}
 
 /* Middle lower */
 .middle__lower {
