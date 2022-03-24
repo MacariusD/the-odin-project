@@ -57,10 +57,10 @@ nav {
 
 .item {
     flex: 1;
+    display: flex;
 }
 
 .item.left {
-    display: flex;
     flex-direction: column;
     gap: 10px;
 }
@@ -72,7 +72,6 @@ nav {
 
 .item.right {
     background-color: #6D747D;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
