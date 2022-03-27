@@ -1,13 +1,12 @@
 // Javascript code for the javascript-basics project page
 
-function clearDisplay() {
+function clearDisplayFB() {
     var results = document.getElementById('numres');
 
     while (results.firstChild) {
         results.removeChild(results.firstChild);
     }
 }
-
 
 function fizzBuzz() {
     let result = document.getElementById('numres');
