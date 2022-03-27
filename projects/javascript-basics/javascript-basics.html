@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project:Javascript-Basics</title>
+        <meta name="description" content="List of The Odin Project Basic Javascript Projects">
+    </head>
+
+    <!-- Fonts -->
+
+    <!-- Styles -->
+    <link href="styles/style.css" rel="stylesheet">
+
+    <!-- Favicon-->
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+
+    <body>
+        <header>
+            <div class="logo_nav_bar">
+                <div class="logo">
+                    <img src="img/JavaScript-logo.png" alt="Javascript logo">
+                    <h3>JavaScript Basics</h3>
+                </div>
+                <nav>
+                    <!-- Link to home can be broken on github...please check -->
+                    <a class="nav__link" href="/"><p>Back to Projects Catalogue</p></a> 
+                </nav>
+            </div>
+            <h1 class="page__title">Javascript Basics Projects from The Odin Project</h1>
+        </header>
+        <main>
+            <div class="fizzbuzz">
+                <div class="fb left">
+                    <h3>FizzBuzz</h3>
+                    <p>This project displays numbers from 1 to a user selected number.</p>
+                    <p>Numbers dividable by 3 will display Fizz<br>
+                        Numbers dividable by 5 will display Buzz<br>
+                        Numbers dividable by both will display FizzBuzz
+                    </p>
+                </div>
+                <div class="fb right">
+                    <label for="unum">Enter Number Below:</label>
+                    <div class="input_button">
+                        <input type="text" id="unum" name="unum">
+                        <button type="button" id="fb_btn" onclick="fizzBuzz()">Generate Numbers</button>
+                    </div>
+                    <div class="results">
+                        <output name="res__display" for="unum" id="numres"></output>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
