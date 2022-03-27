@@ -15,7 +15,7 @@
     <!-- Favicon-->
 
     <!-- Scripts -->
-    <script src="scripts/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 
     <body>
         <header>
@@ -45,10 +45,10 @@
                     <label for="unum">Enter Number Below:</label>
                     <div class="input_button">
                         <input type="text" id="unum" name="unum">
-                        <button type="button">Generate Numbers</button><br>
+                        <button type="button" id="fb_btn" onclick="fizzBuzz()">Generate Numbers</button>
                     </div>
                     <div class="results">
-                        <output name="res__display" for="unum"></output>
+                        <output name="res__display" for="unum" id="numres"></output>
                     </div>
                 </div>
             </div>

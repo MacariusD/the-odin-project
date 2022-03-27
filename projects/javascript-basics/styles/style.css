@@ -11,6 +11,7 @@
     --dark-bg-color: black;
     --light-bg-color: white;
     --light-text-color: white;
+    --dark-text-color: black;
     --secondary-color: #F7E025;
 }
 
@@ -97,6 +98,8 @@ header {
 .results {
     height: 150px;
     width: 400px;
+    padding: 5px;
     background-color:var(--light-bg-color);
     overflow-y: auto;
+    color: var(--dark-text-color)
 }
