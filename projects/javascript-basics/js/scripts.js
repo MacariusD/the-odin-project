@@ -1,7 +1,8 @@
 // Javascript code for the javascript-basics project page
+// Can be improved for readablity (use a validation)
 
 function clearDisplayFB() {
-    var results = document.getElementById('numres');
+    var results = document.getElementById('numRes');
 
     while (results.firstChild) {
         results.removeChild(results.firstChild);
@@ -9,20 +10,20 @@ function clearDisplayFB() {
 }
 
 function fizzBuzz() {
-    let result = document.getElementById('numres');
-    clearDisplay()
-    let unum = document.getElementById('unum').value;
+    let result = document.getElementById('numRes');
+    clearDisplayFB()
+    let uNum = document.getElementById('uNum').value;
 
-    if (Number(unum)){
-        for (let res_counter = 1;res_counter <= unum; res_counter++) {
-            if (res_counter % 5 === 0 && res_counter % 3 === 0){
+    if (Number(uNum)){
+        for (let resCounter = 1;resCounter <= uNum; resCounter++) {
+            if (resCounter % 5 === 0 && resCounter % 3 === 0){
                 result.insertAdjacentText("beforeend",'FizzBuzz, ');
-            } else if (res_counter % 5 === 0){
+            } else if (resCounter % 5 === 0){
                 result.insertAdjacentText("beforeend",'Buzz, ');
-            } else if (res_counter % 3 === 0){
+            } else if (resCounter % 3 === 0){
                 result.insertAdjacentText("beforeend",'Fizz, ');
             } else {
-                result.insertAdjacentText("beforeend", res_counter + ', ');
+                result.insertAdjacentText("beforeend", resCounter + ', ');
             }
         }
     } else {
