@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="rps">
+            <div class="rps__main">
                 <div class="rps left">
                     <h3>Rock, Paper, Scissors</h3>
                     <p>This project has the user play "Rock, Paper, Scissors" vs the computer.</p>
@@ -64,12 +64,27 @@
                         This is a best of 5 rounds game.</p>
                 </div>
                 <div class="rps right">
-                    <div class="rps__game">
-                        <output name="rps__game" id="rps__output"></output>
-                        <output name="rps__history" id="rps__history__output"></output>
+                    <div class="rps__game board">
+                        <label for="rps__gameDisp__output">Game Board:</label>
+                        <div class="rps__output">
+                            <output name="rps__gameDisp" id="rps__gameDisp__output"></output>
+                        </div>
+                        <div class="rps__controls">
+                            <div class="rps__options">
+                                <button type="button" id="rps__rock" onclick="rockSelect()" disabled>Rock</button>
+                                <button type="button" id="rps__paper" onclick="paperSelect()"disabled>Paper</button>
+                                <button type="button" id="rps__scissors" onclick="scissorsSelect()"disabled>Scissors</button>
+                            </div>
+                            <div class="rps__start">
+                                <button type="button" id="rps__begin" onclick="startFunction()">Begin Game</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rps__controls">
-                        
+                    <div class="rps__game history">
+                        <label for="rps__historyDisp__output">Game History:</label>
+                        <div class="rps__history">
+                            <output name="rps__historyDisp" id="rps__historyDisp__output"></output>
+                        </div>
                     </div>
                 </div>
             </div>

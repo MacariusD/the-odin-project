@@ -103,3 +103,71 @@ header {
     overflow-y: auto;
     color: var(--dark-text-color)
 }
+
+/* Rock, Paper, Scissors Section */
+.rps__main {
+    background-color: var(--dark-bg-color);
+    padding: 15px 200px 20px;
+    color: var(--light-text-color);
+    display: flex;
+    gap: 30px;
+}
+
+.rps {
+    flex: 1;
+    display: flex;
+    /* gap: 40px; */
+}
+
+.rps.left {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rps.right {
+    gap: 40px;
+}
+
+.rps__game {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rps__output {
+    height: 150px;
+    width: 250px;
+    padding: 5px;
+    background-color:var(--light-bg-color);
+    overflow-y: auto;
+    color: var(--dark-text-color)
+}
+
+.rps__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.rps__controls button {
+    padding: 0px 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rps__controls button:disabled {
+    opacity: 0;
+    cursor: default;
+}
+
+.rps__history {
+    height: 150px;
+    width: 100px;
+    padding: 5px;
+    background-color:var(--light-bg-color);
+    overflow-y: auto;
+    color: var(--dark-text-color)
+}
