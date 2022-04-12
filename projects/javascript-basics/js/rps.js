@@ -6,6 +6,9 @@ function computerPlay() {
     return computerOptions[Math.floor(Math.random() * (maxNum - minNum)) + minNum];
 }
 
+function playerPlay(opt) {
+
+}
 
 
 console.log(computerPlay())
