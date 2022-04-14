@@ -12,3 +12,7 @@ function playerPlay(opt) {
 
 
 console.log(computerPlay())
+// let happy = 20
+// let go = `I am ${happy}`
+
+// console.log (go)
