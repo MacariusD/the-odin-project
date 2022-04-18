@@ -15,6 +15,15 @@
     --secondary-color: #F7E025;
 }
 
+/* Global Styles */
+button {
+    padding: 0px 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 /* Header */
 header {
     background-color: var(--dark-bg-color);
@@ -88,13 +97,6 @@ header {
     border: none;
 }
 
-.fb.right button {
-    padding: 0px 10px;
-    background-color: var(--secondary-color);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
 .results {
     height: 150px;
     width: 400px;
@@ -150,14 +152,6 @@ header {
     align-items: center;
 }
 
-.rps__controls button {
-    padding: 0px 10px;
-    background-color: var(--secondary-color);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 .rps__controls button:disabled {
     opacity: 0;
     cursor: default;
@@ -170,4 +164,8 @@ header {
     background-color:var(--light-bg-color);
     overflow-y: auto;
     color: var(--dark-text-color)
+}
+
+.rps__reset {
+    align-items: center;
 }
