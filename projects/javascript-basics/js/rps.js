@@ -8,47 +8,46 @@ function computerPlay() {
 
 function rockPlay(cplay) {
     if (cplay == 'Paper') {
-        return 'You Lose, Paper beats Rock'
+        return 'You Lose! Paper beats Rock'
     } else if (cplay == 'Scissors') {
-        return 'You Win, Rock beats Scissors'
+        return 'You Win! Rock beats Scissors'
     } else if (cplay == 'Rock') {
-        return 'It\'s a Draw, Computer played Rock'
+        return 'It\'s a Draw! Computer played Rock'
     }
 }
 
 function paperPlay(cplay) {
     if (cplay == 'Scissors') {
-        return 'You Lose, Scissors beats Paper'
+        return 'You Lose! Scissors beats Paper'
     } else if (cplay == 'Rock') {
-        return 'You Win, Paper beats Rock'
+        return 'You Win! Paper beats Rock'
     } else if (cplay == 'Paper') {
-        return 'It\'s a Draw, Computer played Paper'
+        return 'It\'s a Draw! Computer played Paper'
     }
 }
 
 function scissorsPlay(cplay) {
     if (cplay == 'Rock') {
-        return 'You Lose, Rock beats Scissors'
+        return 'You Lose! Rock beats Scissors'
     } else if (cplay == 'Paper') {
-        return 'You Win, Scissors beats Paper'
+        return 'You Win! Scissors beats Paper'
     } else if (cplay == 'Scissors') {
-        return 'It\'s a Draw, Computer played Scissors'
+        return 'It\'s a Draw! Computer played Scissors'
     }
 }
 
 function playerPlay(opt) {
     let cplay = computerPlay()
-
+    let result = ''
     if (opt == 'rock') {
-        rockPlay(cplay)
+        result = rockPlay(cplay)
     }else if (opt == 'paper') {
-        paperPlay(cplay)
+        result = paperPlay(cplay)
     }else if (opt == 'scissors') {
-        scissorsPlay(cplay)
+        result = scissorsPlay(cplay)
     }
 
-
-
+    console.log(result)
 }
 
 function roundCheck() {
