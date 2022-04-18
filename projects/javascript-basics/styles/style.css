@@ -167,5 +167,7 @@ header {
 }
 
 .rps__reset {
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
 }
