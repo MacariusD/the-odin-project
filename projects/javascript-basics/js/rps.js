@@ -6,12 +6,56 @@ function computerPlay() {
     return computerOptions[Math.floor(Math.random() * (maxNum - minNum)) + minNum];
 }
 
+function rockPlay(cplay) {
+    if (cplay == 'Paper') {
+        return 'You Lose, Paper beats Rock'
+    } else if (cplay == 'Scissors') {
+        return 'You Win, Rock beats Scissors'
+    } else if (cplay == 'Rock') {
+        return 'It\'s a Draw, Computer played Rock'
+    }
+}
+
+function paperPlay(cplay) {
+    if (cplay == 'Scissors') {
+        return 'You Lose, Scissors beats Paper'
+    } else if (cplay == 'Rock') {
+        return 'You Win, Paper beats Rock'
+    } else if (cplay == 'Paper') {
+        return 'It\'s a Draw, Computer played Paper'
+    }
+}
+
+function scissorsPlay(cplay) {
+    if (cplay == 'Rock') {
+        return 'You Lose, Rock beats Scissors'
+    } else if (cplay == 'Paper') {
+        return 'You Win, Scissors beats Paper'
+    } else if (cplay == 'Scissors') {
+        return 'It\'s a Draw, Computer played Scissors'
+    }
+}
+
 function playerPlay(opt) {
+    let cplay = computerPlay()
+
+    if (opt == 'rock') {
+        rockPlay(cplay)
+    }else if (opt == 'paper') {
+        paperPlay(cplay)
+    }else if (opt == 'scissors') {
+        scissorsPlay(cplay)
+    }
+
+
 
 }
 
+function roundCheck() {
 
-console.log(computerPlay())
+}
+
+// console.log(computerPlay())
 // let happy = 20
 // let go = `I am ${happy}`
 
