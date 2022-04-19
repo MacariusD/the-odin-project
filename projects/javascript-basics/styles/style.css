@@ -142,7 +142,7 @@ header {
     padding: 5px;
     background-color:var(--light-bg-color);
     overflow-y: auto;
-    color: var(--dark-text-color)
+    color: var(--dark-text-color);
 }
 
 .rps__controls {
