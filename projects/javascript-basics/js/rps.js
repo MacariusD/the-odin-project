@@ -61,7 +61,7 @@ function playerPlay(opt) {
 
     // console.log(result)
     let resultDisp = document.getElementById('rps__gameDisp__output')
-    resultDisp.insertAdjacentText("beforeend", `${result}`)
+    resultDisp.insertAdjacentHTML("beforeend", `<p>${result}</p>`)
 
     if (round == 5) {
         endFunction()
@@ -78,13 +78,13 @@ function endFunction() {
     let histDisp = document.getElementById('rps__historyDisp__output')
     if (uWin > cWin) {
         // console.log(`You won Game ${gameCount}`)
-        histDisp.insertAdjacentText("beforeend",`You won Game ${gameCount}`)
+        histDisp.insertAdjacentHTML("beforeend",`<p>You won Game ${gameCount}</p>`)
     } else if (cWin > uWin) {
         // console.log(`AI won Game ${gameCount}`)
-        histDisp.insertAdjacentText("beforeend",`AI won Game ${gameCount}`)
+        histDisp.insertAdjacentHTML("beforeend",`<p>AI won Game ${gameCount}</p>`)
     } else {
         // console.log(`Game ${gameCount} was a Draw`)
-        histDisp.insertAdjacentText("beforeend",`Game ${gameCount} was a Draw`)
+        histDisp.insertAdjacentHTML("beforeend",`<p>Game ${gameCount} was a Draw</p>`)
     }
 }
 

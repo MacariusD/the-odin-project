@@ -136,6 +136,11 @@ header {
     gap: 5px;
 }
 
+.rps output {
+    display: flex;
+    flex-direction: column;
+}
+
 .rps__output {
     height: 150px;
     width: 250px;
