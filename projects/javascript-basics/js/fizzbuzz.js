@@ -2,10 +2,10 @@
 // Can be improved for readablity (use a validation)
 
 function clearDisplayFB() {
-    var results = document.getElementById('numRes');
+    var result = document.getElementById('numRes');
 
-    while (results.firstChild) {
-        results.removeChild(results.firstChild);
+    while (result.firstChild) {
+        result.removeChild(result.firstChild);
     }
 }
 

@@ -59,7 +59,9 @@ function playerPlay(opt) {
         result = scissorsPlay(cplay)
     }
 
-    console.log(result)
+    // console.log(result)
+    let resultDisp = document.getElementById('rps__gameDisp__output')
+    resultDisp.insertAdjacentText("beforeend", `${result}`)
 
     if (round == 5) {
         endFunction()
@@ -73,12 +75,16 @@ function endFunction() {
     document.getElementById("rps__paper").disabled = true;
     document.getElementById("rps__scissors").disabled = true;
 
+    let histDisp = document.getElementById('rps__historyDisp__output')
     if (uWin > cWin) {
-        console.log(`You won Game ${gameCount}`)
+        // console.log(`You won Game ${gameCount}`)
+        histDisp.insertAdjacentText("beforeend",`You won Game ${gameCount}`)
     } else if (cWin > uWin) {
-        console.log(`AI won Game ${gameCount}`)
+        // console.log(`AI won Game ${gameCount}`)
+        histDisp.insertAdjacentText("beforeend",`AI won Game ${gameCount}`)
     } else {
-        console.log(`Game ${gameCount} was a Draw`)
+        // console.log(`Game ${gameCount} was a Draw`)
+        histDisp.insertAdjacentText("beforeend",`Game ${gameCount} was a Draw`)
     }
 }
 
@@ -90,11 +96,21 @@ function startFunction() {
     document.getElementById("rps__rock").disabled = false;
     document.getElementById("rps__paper").disabled = false;
     document.getElementById("rps__scissors").disabled = false;
+
+    // clear results display
+    let resultDisp = document.getElementById('rps__gameDisp__output')
+    while (resultDisp.firstChild) {
+        resultDisp.removeChild(resultDisp.firstChild);
+    }
 }
 
 function clearHistory() {
     // used to clear history display
     gameCount = 0
+    let histDisp = document.getElementById('rps__historyDisp__output')
+    while (histDisp.firstChild) {
+        histDisp.removeChild(histDisp.firstChild);
+    }
 }
 
 // console.log(computerPlay())
