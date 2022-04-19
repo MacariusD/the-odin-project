@@ -15,7 +15,8 @@
     <!-- Favicon-->
 
     <!-- Scripts -->
-    <script src="js/scripts.js"></script>
+    <script src="js/fizzbuzz.js"></script>
+    <script src="js/rps.js"></script>
 
     <body>
         <header>
@@ -42,13 +43,51 @@
                     </p>
                 </div>
                 <div class="fb right">
-                    <label for="unum">Enter Number Below:</label>
+                    <label for="uNum">Enter Number Below:</label>
                     <div class="input_button">
-                        <input type="text" id="unum" name="unum">
+                        <input type="text" id="uNum" name="uNum">
                         <button type="button" id="fb_btn" onclick="fizzBuzz()">Generate Numbers</button>
                     </div>
                     <div class="results">
-                        <output name="res__display" for="unum" id="numres"></output>
+                        <output name="res__display" for="uNum" id="numRes"></output>
+                    </div>
+                </div>
+            </div>
+            <div class="rps__main">
+                <div class="rps left">
+                    <h3>Rock, Paper, Scissors</h3>
+                    <p>This project has the user play "Rock, Paper, Scissors" vs the computer.</p>
+                    <p>Press the “Begin Game” button to start.<br>
+                        Press the “Rock”, “Paper”, or “Scissors” button to enter your choice.<br>
+                        The computer will randomly select an option to play against you.<br>
+                        The winner will be displayed.<br>
+                        This is a best of 5 rounds game.</p>
+                </div>
+                <div class="rps right">
+                    <div class="rps__game board">
+                        <label for="rps__gameDisp__output">Game Board:</label>
+                        <div class="rps__output">
+                            <output name="rps__gameDisp" id="rps__gameDisp__output"></output>
+                        </div>
+                        <div class="rps__controls">
+                            <div class="rps__options">
+                                <button type="button" id="rps__rock" onclick="playerPlay('rock')" disabled >Rock</button>
+                                <button type="button" id="rps__paper" onclick="playerPlay('paper')" disabled >Paper</button>
+                                <button type="button" id="rps__scissors" onclick="playerPlay('scissors')" disabled >Scissors</button>
+                            </div>
+                            <div class="rps__start">
+                                <button type="button" id="rps__begin" onclick="startFunction()">Begin Game</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rps__game history">
+                        <label for="rps__historyDisp__output">Game History:</label>
+                        <div class="rps__history">
+                            <output name="rps__historyDisp" id="rps__historyDisp__output"></output>
+                        </div>
+                        <div class="rps__reset">
+                            <button type="button" id="rps__clear" onclick="clearHistory()">Clear History</button>
+                        </div>
                     </div>
                 </div>
             </div>
