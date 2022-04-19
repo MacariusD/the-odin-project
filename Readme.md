@@ -6,3 +6,6 @@ This base site will hold links to all my odin projects.
 
 Projects:
 - Recipes
+- Landing-Page MockUp
+- FizzBuzz JS
+- Rock, Paper, Scissors JS
